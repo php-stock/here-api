@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  # Web server container
+  webserver:
+    build: .docker/caddy
+    ports:
+      - 80:80
+    volumes:
+      - ./:/var/www/
+      - ./.docker/caddy/.conf:/etc/caddy/Caddyfile
+    depends_on:
+      - php
+
+  # PHP Container
+  php:
+    build: .docker/php
+    volumes:
+      - ./:/var/www/

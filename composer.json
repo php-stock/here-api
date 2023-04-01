@@ -1,0 +1,21 @@
+{
+    "name": "php-stock/here-api",
+    "description": "Wrapper for here maps API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander T",
+            "email": "alexandert.dev@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/php-stock/here-api",
+    "keywords": ["PHP", "Here API", "Here Maps API"],
+    "autoload": {
+        "psr-4": {
+            "PhpStock\\HereApi\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    }
+}
